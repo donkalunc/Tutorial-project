@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -29,7 +30,17 @@ public class BookServiceImpl implements BookService {
     @Override
     public void saveNewData() {
         Book book = new Book();
-        book.setName("kieran");
+        book.setName("");
         bookRepository.save(book);
+    }
+
+    @Override
+    public Book save(Book newBook) {
+        return null;
+    }
+
+    @Override
+    public Optional<Book> findById(Long id) {
+        return Optional.empty();
     }
 }

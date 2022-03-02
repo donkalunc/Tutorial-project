@@ -19,5 +19,14 @@ public class Book {
 
     @Column
     private String name;
+//
+//    @Column
+//    private String author;
+//
+//    @Column
+//    private String genre;
+//
+//    @Column
+//    private String rating;
 
 }
